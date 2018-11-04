@@ -7,4 +7,4 @@ for filename in os.listdir():
         flv.append(filename.replace(' ','\ ').replace('&','\&'))
 print(flv)
 for i in flv:
-    os.system('ffmpeg -i '+i+' '+'-f mp3 -ac 2 -ab 192 '+os.path.splitext(i)[0]+'.mp3')
+    os.system('ffmpeg -i '+i+' '+'-f mp3 -ac 2 -ab 192k '+os.path.splitext(i)[0]+'.mp3')
